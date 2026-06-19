@@ -4,7 +4,7 @@ from flask import Flask, request
 
 # Bot Token aur QR Link
 BOT_TOKEN = "8867254832:AAFmOp3sIuc5RPee9I6hHY80zTW9n7Gatpk"
-QR_IMAGE_URL = "https://i.postimg.cc/8PtTqyvt/IMG-20260619-113022-205.jpg"
+QR_IMAGE_URL = "https://i.ibb.co/23mn37Hx/image.jpg"
 
 
 bot = telebot.TeleBot(BOT_TOKEN)
