@@ -3,7 +3,7 @@ import telebot
 from flask import Flask, request
 
 # Bot Token aur QR Link
-BOT_TOKEN = "8867254832:AAEgwytL_hnGvSyinh67xanAAhLCLVe6Gzk"
+BOT_TOKEN = "8867254832:AAFmOp3sIuc5RPee9I6hHY80zTW9n7Gatpk"
 QR_IMAGE_URL = "https://i.postimg.cc/8PtTqyvt/IMG-20260619-113022-205.jpg"
 
 
