@@ -4,7 +4,7 @@ from flask import Flask, request
 
 # Bot Token aur QR Link
 BOT_TOKEN = "8867254832:AAFmOp3sIuc5RPee9I6hHY80zTW9n7Gatpk"
-QR_IMAGE_URL = "https://i.ibb.co/23mn37Hx/image.jpg"
+QR_IMAGE_URL = "https://i.postimg.cc/LX8tCNZ6/IMG-20260620-101024.jpg"
 
 
 bot = telebot.TeleBot(BOT_TOKEN)
@@ -40,7 +40,7 @@ def callback_query(call):
     )
     try:
         bot.delete_message(call.message.chat.id, call.message.message_id)
-        bot.send_document(call.message.chat.id, QR_IMAGE_URL, caption=welcome_text, parse_mode="Markdown")
+        bot.send_photo(call.message.chat.id, QR_IMAGE_URL, caption=welcome_text, parse_mode="Markdown")
     except Exception as e:
         bot.send_message(call.message.chat.id, "QR Code load nahi ho paa raha hai.")
 
