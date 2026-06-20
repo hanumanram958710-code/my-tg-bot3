@@ -40,7 +40,7 @@ def callback_query(call):
     )
     try:
         bot.delete_message(call.message.chat.id, call.message.message_id)
-        bot.send_photo(call.message.chat.id, QR_IMAGE_URL, caption=welcome_text, parse_mode="Markdown")
+        bot.send_document(call.message.chat.id, QR_IMAGE_URL, caption=welcome_text, parse_mode="Markdown")
     except Exception as e:
         bot.send_message(call.message.chat.id, "QR Code load nahi ho paa raha hai.")
 
